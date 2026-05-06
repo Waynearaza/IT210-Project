@@ -1,117 +1,138 @@
 <!doctype html>
-<html lang="en">   
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CAR</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Festivals - Explore Cordillera</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
 
   <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">CAR</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="/src/main.html">Explore<span>Cordillera</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+          <i class="fas fa-bars" style="color: #fff"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../main.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Places.html">Places</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Products.html">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Events.html">Events & Festivals</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                More
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">About Me</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="/src/main.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/src/Pages/Places.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link" href="/src/Pages/Products.html">Products</a></li>
+            <li class="nav-item active"><a class="nav-link" href="/src/Pages/Events.html">Festivals</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-<!-- FOOTER -->
- <footer class="bg-dark text-light pt-5 pb-3 mt-5">
-  <div class="container">
-    <div class="row">
-
-      <!-- About -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">About CAR</h5>
-        <p class="small">
-          Discover the beauty, culture, and traditions of the Cordillera Administrative Region.
-        </p>
+    <header id="home" class="hero-section" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1508920150917-a0f5fc0b4119?auto=format&fit=crop&w=1600&q=80') center/cover; height: 50vh; min-height: 400px;">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-lg-8">
+            <h1 class="animate-fade-up">Festivals & Events</h1>
+            <p class="lead mb-4 animate-fade-up">
+              Experience the pulse of the highlands. Witness a spectacular 
+              showcase of colors, music, and ancestral Cordilleran traditions.
+            </p>
+          </div>
+        </div>
       </div>
+    </header>
 
-      <!-- Quick Links -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#about" class="text-light text-decoration-none">About</a></li>
-          <li><a href="#products" class="text-light text-decoration-none">What to Buy</a></li>
-          <li><a href="#places" class="text-light text-decoration-none">Where to Go</a></li>
-          <li><a href="#events" class="text-light text-decoration-none">Festivals & Events</a></li>
-        </ul>
+    <section class="section-padding">
+      <div class="container">
+
+        <div class="filter-menu" id="filterMenu">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="benguet">Benguet</button>
+          <button class="filter-btn" data-filter="ifugao">Ifugao</button>
+          <button class="filter-btn" data-filter="mp">Mountain Province</button>
+        </div>
+
+        <div class="row" id="eventGrid">
+          <div class="col-lg-4 col-md-6 mb-4 filter-item benguet">
+            <div class="car-card">
+              <img src="https://images.unsplash.com/photo-1518534845016-16016e78a635?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Flowers" style="height: 250px; object-fit: cover;" />
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-calendar-alt"></i> February - Baguio City</span>
+                <h4 class="card-title mt-2">Panagbenga Festival</h4>
+                <p class="card-text text-muted">The famous Flower Festival featuring grand street dancing and spectacular floral floats.</p>
+                <a href="inner-event.html" class="font-weight-bold text-success">Event Details <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 filter-item mp">
+            <div class="car-card">
+              <img src="https://images.unsplash.com/photo-1540324155970-141154c156f7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Dancers" style="height: 250px; object-fit: cover;" />
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-calendar-alt"></i> April - Bontoc</span>
+                <h4 class="card-title mt-2">Lang-ay Festival</h4>
+                <p class="card-text text-muted">A celebration of the rich cultural heritage, peace, and unity among the tribes of Mountain Province.</p>
+                <a href="inner-event.html" class="font-weight-bold text-success">Event Details <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 filter-item ifugao">
+            <div class="car-card">
+              <img src="https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Festival" style="height: 250px; object-fit: cover;" />
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-calendar-alt"></i> April - Banaue</span>
+                <h4 class="card-title mt-2">Imbayah Festival</h4>
+                <p class="card-text text-muted">A prestige festival featuring wooden scooter races and celebrations of Ifugao mythology.</p>
+                <a href="inner-event.html" class="font-weight-bold text-success">Event Details <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 filter-item benguet">
+            <div class="car-card">
+              <div class="card-img-top bg-secondary" style="background: url('https://images.unsplash.com/photo-1464965911861-746a04b4bca6?auto=format&fit=crop&w=600&q=80') center/cover; height: 250px;"></div>
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-calendar-alt"></i> March - La Trinidad</span>
+                <h4 class="card-title mt-2">Strawberry Festival</h4>
+                <p class="card-text text-muted">A harvest celebration featuring the baking of the world's largest strawberry shortcake.</p>
+                <a href="inner-event.html" class="font-weight-bold text-success">Event Details <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 filter-item all">
+            <div class="car-card">
+              <div class="card-img-top bg-secondary" style="background-color: #6a8d73; height: 250px;"></div>
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-calendar-alt"></i> February - Kalinga</span>
+                <h4 class="card-title mt-2">Ullalim Festival</h4>
+                <p class="card-text text-muted">Commemorates Kalinga's founding anniversary with epic chants, dances, and weaving exhibits.</p>
+                <a href="inner-event.html" class="font-weight-bold text-success">Event Details <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 filter-item ifugao">
+            <div class="car-card">
+              <div class="card-img-top bg-secondary" style="background-color: #3b5743; height: 250px;"></div>
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-calendar-alt"></i> May - Kiangan</span>
+                <h4 class="card-title mt-2">Gotad ad Kiangan</h4>
+                <p class="card-text text-muted">A grand celebration of the Tuwali Ifugao featuring traditional rites, rice wine, and cultural sports.</p>
+                <a href="inner-event.html" class="font-weight-bold text-success">Event Details <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <!-- Contact -->
-      <div class="col-md-4 mb-4">
-        <h5 class="fw-bold">Contact</h5>
-        <p class="small mb-1">📍 Cordillera, Philippines</p>
-        <p class="small mb-1">📧 example@email.com</p>
-        <p class="small">📞 +63 900 000 0000</p>
+    <footer>
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Explore Cordillera. Designed with custom CSS & JS utilizing Bootstrap.</p>
       </div>
+    </footer>
 
-    </div>
-
-    <hr class="border-secondary">
-
-    <div class="text-center small">
-      © 2026 CAR Tourism Website | All Rights Reserved
-    </div>
-  </div>
-</footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
   </body>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"
-  ></script>
 </html>
