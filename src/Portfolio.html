@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wayne — Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="/css/pstyle.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#hero">Wayne<em style="color:var(--terracotta)">.</em></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-light fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/main.html">Back</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="hero-title fade-up">Aerionne Wayne Araza</h1>
+        <p class="hero-eyebrow fade-up">BSIT Student</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-4">
+        <div class="about-photo-wrap fade-up">
+          <img src="../Images/Portfolio/Grad-1.jpg" alt="Aerionne Wayne Araza" class="about-photo">
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <p class="section-label fade-up">Who I Am</p>
+        <h2 class="section-title fade-up">Hello, I'm Aerionne Wayne Araza</h2>
+        <div class="divider fade-up"></div>
+        <div class="about-text fade-up">
+          <p>I’m a college student with a growing passion for technology, creativity, and problem-solving. My journey started with curiosity — exploring how things work, experimenting with designs, and gradually stepping into the world of coding. What began as simple projects turned into a deeper interest in building things that are not only functional but also meaningful.</p>
+          <p>As a student, I’m constantly learning and refining my skills, both in academics and through hands-on experiences. I enjoy working on projects that challenge me to think critically and creatively, whether it’s developing systems, designing interfaces, or collaborating with others to bring ideas to life.</p>
+          <p>I believe growth comes from staying curious and being open to new experiences. Outside of school, I stay involved in organizations and technical roles that allow me to develop leadership, teamwork, and problem-solving skills. These experiences have taught me the value of responsibility, communication, and attention to detail.</p>
+          <p>I value consistency, learning, and collaboration. While I’m still building my path, I approach every opportunity with dedication and the mindset to improve. If there’s one thing I believe, it’s that even as a student, you can already start creating work that matters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="container">
+    <p class="section-label fade-up">Selected Work</p>
+    <h2 class="section-title fade-up">Portfolio</h2>
+    <div class="divider fade-up"></div>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-4 fade-up">
+        <div class="project-card card h-100">
+          <div class="project-img-placeholder" style="background: linear-gradient(135deg, #2d4a3e, #5a7a5c);">
+            <i class="bi bi-leaf"></i>
+          </div>
+          <div class="card-body">
+            <p class="project-tag">Html · JavaScript</p>
+            <h5 class="card-title">Connect 4</h5>
+            <p class="card-text">A sustainability-tracking app that helps households reduce their carbon footprint through habit logging, visual dashboards, and community challenges. Scaled to 12,000 active users post-launch.</p>
+            <a href="#" class="project-link mt-2 d-inline-block">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-4 fade-up">
+        <div class="project-card card h-100">
+          <div class="project-img-placeholder" style="background: linear-gradient(135deg, #3a2a1e, #c2603a);">
+            <i class="bi bi-credit-card"></i>
+          </div>
+          <div class="card-body">
+            <p class="project-tag">Java</p>
+            <h5 class="card-title">OOP Quest</h5>
+            <p class="card-text">A freelance invoicing and payment platform with automated reminders, multi-currency support, and a clean dashboard that replaces spreadsheet chaos for independent professionals.</p>
+            <a href="#" class="project-link mt-2 d-inline-block">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-4 fade-up">
+        <div class="project-card card h-100">
+          <div class="project-img-placeholder" style="background: linear-gradient(135deg, #1a1a2e, #4a4a8a);">
+            <i class="bi bi-music-note-beamed"></i>
+          </div>
+          <div class="card-body">
+            <p class="project-tag">Vue.js · WebAudio API · Firebase</p>
+            <h5 class="card-title">Waveform</h5>
+            <p class="card-text">A browser-based audio visualization and looper tool for musicians. Features real-time FFT spectrum analysis, loop recording, and collaborative session sharing via WebRTC.</p>
+            <a href="#" class="project-link mt-2 d-inline-block">View Project →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- BLOG -->
+<section id="blog">
+  <div class="container">
+    <p class="section-label fade-up">Thoughts & Insights</p>
+    <h2 class="section-title fade-up">Blog</h2>
+    <div class="divider fade-up"></div>
+    <div class="row g-4">
+
+      <!-- Entry 1 -->
+      <div class="col-md-6 fade-up">
+        <div class="blog-card">
+          <span class="blog-num">01</span>
+          <p class="blog-date">April 28, 2026</p>
+          <h4>Why I Stopped Chasing Perfect Code</h4>
+          <p>After five years of obsessing over clean architecture and pristine abstractions, I've learned that shipping is a form of craftsmanship too. Here's how my philosophy on "good enough" evolved — and why it's made me a better developer.</p>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Entry 2 -->
+      <div class="col-md-6 fade-up">
+        <div class="blog-card">
+          <span class="blog-num">02</span>
+          <p class="blog-date">March 15, 2026</p>
+          <h4>Designing for Trust: The UX of Financial Apps</h4>
+          <p>Working on Ledger Studio taught me that trust isn't built through features — it's built through microcopy, loading states, and the 200 milliseconds after a user hits "submit". A deep dive into designing for financial anxiety.</p>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Entry 3 -->
+      <div class="col-md-6 fade-up">
+        <div class="blog-card">
+          <span class="blog-num">03</span>
+          <p class="blog-date">February 3, 2026</p>
+          <h4>Getting Started with the WebAudio API</h4>
+          <p>The WebAudio API is one of the browser's most powerful and least-understood features. This hands-on tutorial walks through building a real-time audio visualizer from scratch — no libraries, just vanilla JS and a healthy curiosity.</p>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Entry 4 -->
+      <div class="col-md-6 fade-up">
+        <div class="blog-card">
+          <span class="blog-num">04</span>
+          <p class="blog-date">January 11, 2026</p>
+          <h4>My Honest Review of Working Fully Remote</h4>
+          <p>Three years in, remote work has changed my relationship with productivity, creativity, and the concept of a "work day" entirely. Some of it surprised me. Not all of it was good — and that's worth talking about honestly.</p>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume">
+  <div class="container">
+    <p class="section-label fade-up" style="color:var(--terracotta)">My Background</p>
+    <h2 class="section-title fade-up" style="color:var(--cream)">Resume</h2>
+    <div class="divider fade-up"></div>
+    <div class="row g-5">
+
+      <!-- Left: Education -->
+      <div class="col-lg-7">
+        <div class="resume-block fade-up">
+          <p class="resume-block-title">Education</p>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">B.S. Information Technology</span>
+              <span class="resume-item-period">2024 – Present</span>
+            </div>
+            <p class="resume-item-sub">Olivarez College Tagaytay</p>
+            <p class="resume-item-desc">Currently pursuing a BSIT degree with coursework in software development, systems analysis, and user-centered design.</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Senior High School - STEM</span>
+              <span class="resume-item-period">2022 – 2024</span>
+            </div>
+            <p class="resume-item-sub">Saint Joseph Parachoial School of Cavite Inc.</p>
+            <p class="resume-item-desc">Graduated with High Honors, focusing on science, technology, engineering, and mathematics.</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Junior High School</span>
+              <span class="resume-item-period">2018 – 2022</span>
+            </div>
+            <p class="resume-item-sub">Kaytitinga Integrated School</p>
+            <p class="resume-item-desc">Completed a well-rounded academic program with advanced math and computer literacy courses.</p>
+          </div>
+          <div class="resume-item">
+            <div class="resume-item-header">
+              <span class="resume-item-title">Elementary</span>
+              <span class="resume-item-period">2012 – 2018</span>
+            </div>
+            <p class="resume-item-sub">Biblica La Delle Academy inc.</p>
+            <p class="resume-item-desc">Completed foundational education with a focus on mathematics and science.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Skills + Achievements -->
+      <div class="col-lg-5">
+        <div class="resume-block fade-up">
+          <p class="resume-block-title">Skills</p>
+          <div>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">Next.js</span>
+            <span class="skill-pill">Vue.js</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MongoDB</span>
+            <span class="skill-pill">GraphQL</span>
+            <span class="skill-pill">REST APIs</span>
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">AWS</span>
+            <span class="skill-pill">Figma</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">CI/CD</span>
+            <span class="skill-pill">Accessibility</span>
+          </div>
+        </div>
+
+        <div class="resume-block fade-up">
+          <p class="resume-block-title">Achievements</p>
+          <div class="achievement-item">
+            <i class="bi bi-trophy achievement-icon"></i>
+            <span class="achievement-text">Dices Sports For Peace Badminton Doubles 1st Runner Up</span>
+          </div>
+          <div class="achievement-item">
+            <i class="bi bi-star achievement-icon"></i>
+            <span class="achievement-text">Open source contributor: 1,200+ GitHub stars across personal projects and OSS contributions.</span>
+          </div>
+          <div class="achievement-item">
+            <i class="bi bi-mortarboard achievement-icon"></i>
+            <span class="achievement-text">Guest lecturer at UC Berkeley Extension — "Modern Web Architecture" (Spring 2025).</span>
+          </div>
+          <div class="achievement-item">
+            <i class="bi bi-award achievement-icon"></i>
+            <span class="achievement-text">Published in Smashing Magazine: "Building Accessible SPAs with React and ARIA."</span>
+          </div>
+        </div>
+
+        <div class="fade-up">
+          <a href="#" class="btn-primary-custom d-inline-flex align-items-center gap-2">
+            <i class="bi bi-download"></i> Download Full CV
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label fade-up">Get In Touch</p>
+    <h2 class="section-title fade-up">Contact Me</h2>
+    <div class="divider fade-up"></div>
+    <div class="row g-5">
+
+      <!-- Info -->
+      <div class="col-lg-4 fade-up">
+        <p style="color:#555; line-height:1.8; margin-bottom:2.5rem; font-size:0.97rem;">Have a project in mind? A question? Or just want to say hello? Fill out the form and I'll get back to you within 24 hours.</p>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-envelope"></i></div>
+          <div>
+            <p class="contact-info-label">Email</p>
+            <p class="contact-info-text">waynearaza@gmail.com</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-telephone"></i></div>
+          <div>
+            <p class="contact-info-label">Phone</p>
+            <p class="contact-info-text">+63 0995 836 3983</p>
+          </div>
+        </div>
+        <div class="contact-info-item">
+          <div class="contact-info-icon"><i class="bi bi-geo-alt"></i></div>
+          <div>
+            <p class="contact-info-label">Location</p>
+            <p class="contact-info-text">Kaytitinga 1, Alfonso, Cavite</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="col-lg-8 fade-up">
+        <div class="contact-form-wrap">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Full Name *</label>
+              <input type="text" class="form-control" placeholder="Jane Doe" required/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Email Address *</label>
+              <input type="email" class="form-control" placeholder="jane@example.com" required/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Phone Number</label>
+              <input type="tel" class="form-control" placeholder="+1 (555) 000-0000"/>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Subject *</label>
+              <input type="text" class="form-control" placeholder="Project Inquiry" required/>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Message *</label>
+              <textarea class="form-control" rows="5" placeholder="Tell me about your project or question..." required></textarea>
+            </div>
+            <div class="col-12">
+              <button type="button" class="btn-primary-custom w-100 text-center" onclick="handleSubmit(this)">
+                Send Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL -->
+<section id="social" style="padding:5rem 0;">
+  <div class="container">
+    <p class="social-title">Find Me Online</p>
+    <div class="social-links">
+      <div class="text-center">
+        <a href="https://github.com/Waynearaza" target="_blank" rel="noopener" class="social-btn" aria-label="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <p class="social-label">GitHub</p>
+      </div>
+      <div class="text-center">
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <p class="social-label">LinkedIn</p>
+      </div>
+      <div class="text-center">
+        <a href="https://twitter.com" target="_blank" rel="noopener" class="social-btn" aria-label="Twitter / X">
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <p class="social-label">Twitter</p>
+      </div>
+      <div class="text-center">
+        <a href="https://dribbble.com" target="_blank" rel="noopener" class="social-btn" aria-label="Dribbble">
+          <i class="bi bi-dribbble"></i>
+        </a>
+        <p class="social-label">Dribbble</p>
+      </div>
+      <div class="text-center">
+        <a href="https://www.instagram.com/wayneyaraza/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <p class="social-label">Instagram</p>
+      </div>
+      <div class="text-center">
+        <a href="https://youtube.com" target="_blank" rel="noopener" class="social-btn" aria-label="YouTube">
+          <i class="bi bi-youtube"></i>
+        </a>
+        <p class="social-label">YouTube</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Aerionne Wayne Araza</span>. Designed & built with Bootstrap 5.</p>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/p.js"></script>
+</body>
+</html>
