@@ -1,0 +1,197 @@
+:root {
+  --car-green: #2d5a27; /* Pine Tree / Rice Terrace Green */
+  --car-green-dark: #1b3817;
+  --car-terracotta: #c05c3b; /* Earthy cultural tone */
+  --car-light: #f4f6f4;
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+/* Custom Navbar Behavior */
+.navbar-custom {
+  transition: all 0.4s ease;
+  padding: 15px 0;
+  background-color: transparent;
+}
+
+.navbar-custom.scrolled {
+  background-color: var(--car-green-dark);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+}
+
+.navbar-custom .navbar-brand {
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  color: #fff;
+}
+.navbar-custom .navbar-brand span {
+  color: var(--car-terracotta);
+}
+.navbar-custom .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+.navbar-custom .nav-link:hover {
+  color: var(--car-terracotta) !important;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+    url("/Images/Header.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-section h1 {
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+}
+
+/* Custom Buttons */
+.btn-car-primary {
+  background-color: var(--car-terracotta);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-car-primary:hover {
+  background-color: #a0492c;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(192, 92, 59, 0.4);
+}
+.btn-car-outline {
+  border: 2px solid var(--car-green);
+  color: var(--car-green);
+  background: transparent;
+  border-radius: 30px;
+  padding: 8px 20px;
+  transition: 0.3s;
+}
+.btn-car-outline:hover {
+  background: var(--car-green);
+  color: #fff;
+}
+
+/* Section Styling */
+.section-padding {
+  padding: 80px 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-title span {
+  color: var(--car-terracotta);
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 10px;
+}
+.section-title h2 {
+  color: var(--car-green-dark);
+  font-size: 2.5rem;
+}
+
+/* Custom Cards for Grid Items */
+.car-card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  height: 100%;
+  background: #fff;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.car-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+.car-card .card-body {
+  padding: 25px;
+}
+.car-card .location-badge {
+  color: var(--car-terracotta);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+/* Filter Menu (Custom JS Feature) */
+.filter-menu {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #666;
+  font-weight: 600;
+  padding: 8px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-bottom: 2px solid transparent;
+}
+.filter-btn.active,
+.filter-btn:hover {
+  color: var(--car-green);
+  border-bottom: 2px solid var(--car-green);
+}
+
+footer {
+  background-color: var(--car-green-dark);
+  color: #ddd;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 3rem;
+  }
+  .navbar-custom {
+    background-color: var(--car-green-dark);
+    padding: 10px 0;
+  }
+}
