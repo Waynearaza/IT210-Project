@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Where to Go - Explore Cordillera</title>
+    <title>Destinations</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -13,24 +13,24 @@
 
   <body>
     
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
+   <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="/src/main.html">Explore<span>Cordillera</span></a>
+        <a class="navbar-brand text-white" href="/src/main.html" style="color: #fff !important;">Cordillera</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <i class="fas fa-bars" style="color: #fff"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="/src/main.html">Home</a></li>
-            <li class="nav-item active"><a class="nav-link" href="/src/Pages/Places.html">Destinations</a></li>
-            <li class="nav-item"><a class="nav-link" href="/src/Pages/Products.html">Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="/src/Pages/Events.html">Festivals</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/main.html">Home</a></li>
+            <li class="nav-item active"><a class="nav-link text-white" href="/src/Pages/Places.html">Destinations</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/Pages/Products.html">Products</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="/src/Pages/Events.html">Festivals</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header id="home" class="hero-section" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/Images/Cave.jpg') center/cover; height: 50vh; min-height: 400px;">
+    <header id="home" class="hero-section" style="background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('/Images/Headers/Cave.jpg') center/cover; height: 50vh; min-height: 400px;">
       <div class="container text-center text-md-left">
         <div class="row">
           <div class="col-lg-8">
@@ -55,94 +55,124 @@
         </div>
 
         <div class="row" id="destinationGrid">
+          
+          <!-- Banaue Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item ifugao">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1543165213-9a3d463d11b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Banaue" style="height: 250px; object-fit: cover;" />
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Banaue.jpg" class="card-img-top" alt="Banaue" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Ifugao</span>
                 <h4 class="card-title mt-2">Banaue Rice Terraces</h4>
                 <p class="card-text text-muted">The "Eighth Wonder of the World," carved into the mountains by ancestors over 2,000 years ago.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="/src/Pages/Places/Banaue.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Sagada Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item mp">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1552085731-0677a28ebf94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sagada" style="height: 250px; object-fit: cover;" />
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Sagada.jpg" class="card-img-top" alt="Sagada" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Mountain Province</span>
                 <h4 class="card-title mt-2">Sagada Hanging Coffins</h4>
                 <p class="card-text text-muted">A fascinating centuries-old traditional burial site suspended high along limestone cliffs.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="/src/Pages/Places/Sagada.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Mt Pulag Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item benguet">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1518242007629-613d7890c29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mt Pulag" style="height: 250px; object-fit: cover;" />
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Mt Pulag.jpg" class="card-img-top" alt="Mt Pulag" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Benguet</span>
                 <h4 class="card-title mt-2">Mount Pulag</h4>
                 <p class="card-text text-muted">Luzon's highest peak, famous for its majestic "sea of clouds" and unique dwarf bamboo.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Burnham Park Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item benguet">
-            <div class="car-card">
-              <div class="card-img-top bg-secondary" style="background: url('https://images.unsplash.com/photo-1605300188682-1e9a7baae989?auto=format&fit=crop&w=600&q=80') center/cover; height: 250px;"></div>
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Burnham Park.jpg" class="card-img-top" alt="Burnham Park" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Baguio City (Benguet)</span>
                 <h4 class="card-title mt-2">Burnham Park</h4>
                 <p class="card-text text-muted">The historic heart of Baguio featuring a man-made lake perfect for swan boating and picnics.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Batad Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item ifugao">
-            <div class="car-card">
-              <div class="card-img-top bg-secondary" style="background: url('https://images.unsplash.com/photo-1542640244-7e672d6cb466?auto=format&fit=crop&w=600&q=80') center/cover; height: 250px;"></div>
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Batad.jpg" class="card-img-top" alt="Batad" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Ifugao</span>
                 <h4 class="card-title mt-2">Batad Rice Terraces</h4>
                 <p class="card-text text-muted">Distinctive amphitheater-like terraces that offer intense trekking and rewarding views.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Buscalan Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item all">
-            <div class="car-card">
-              <div class="card-img-top bg-secondary" style="background-color: #6a8d73; height: 250px;"></div>
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Busculan.jpg" class="card-img-top" alt="Burnham Park" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Kalinga</span>
                 <h4 class="card-title mt-2">Buscalan Village</h4>
                 <p class="card-text text-muted">Home of Apo Whang-Od, the legendary and oldest traditional Kalinga tattoo artist.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Kaparkan Falls Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item all">
-            <div class="car-card">
-              <div class="card-img-top bg-secondary" style="background-color: #537a5f; height: 250px;"></div>
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Karpakan.jpg" class="card-img-top" alt="Burnham Park" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Abra</span>
                 <h4 class="card-title mt-2">Kaparkan Falls</h4>
                 <p class="card-text text-muted">A stunning multi-tiered limestone cascade that transforms into natural pools.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Mines View Card -->
           <div class="col-lg-4 col-md-6 mb-4 filter-item benguet">
-            <div class="car-card">
-              <div class="card-img-top bg-secondary" style="background-color: #3b5743; height: 250px;"></div>
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/Mines View.jpg" class="card-img-top" alt="Burnham Park" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Baguio City (Benguet)</span>
                 <h4 class="card-title mt-2">Mines View Park</h4>
                 <p class="card-text text-muted">Offers a spectacular viewing deck of the gold and copper mines of the Cordillera mountains.</p>
-                <a href="inner-destination.html" class="font-weight-bold text-success">Read More <i class="fas fa-arrow-right"></i></a>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
+
+          <!-- Strawberry Farm Card -->
+          <div class="col-lg-4 col-md-6 mb-4 filter-item benguet">
+            <div class="car-card position-relative shadow-sm h-100">
+              <img src="/Images/Places/La Trinidad.jpg" class="card-img-top" alt="Burnham Park" style="height: 250px; object-fit: cover;" />
+              <div class="card-body">
+                <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Baguio City (Benguet)</span>
+                <h4 class="card-title mt-2">La Trinidad Strawberry Farm</h4>
+                <p class="card-text text-muted">A farm where visitors can pick fresh strawberries.</p>
+                <a href="inner-destination.html" class="font-weight-bold text-success stretched-link">Read More <i class="fas fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

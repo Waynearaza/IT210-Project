@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>CAR - Explore Cordillera</title>
+    <title>CAR</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -14,22 +14,23 @@
   <body data-spy="scroll" data-target=".navbar" data-offset="100">
     
     <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="main.html">Explore<span>Cordillera</span></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars" style="color: #fff"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="#previews">Overview</a></li>
-            <li class="nav-item"><a class="nav-link" href="/src/Pages/Places.html">Destinations</a></li>
-            <li class="nav-item"><a class="nav-link" href="/src/Pages/Products.html">Products</a></li>
-            <li class="nav-item"><a class="nav-link" href="/src/Pages/Events.html">Festivals</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <div class="container">
+    <a class="navbar-brand text-white" href="/src/main.html" style="color: #fff !important;">Cordillera</a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+      <i class="fas fa-bars" style="color: #fff"></i>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="/src/main.html">Home</a></li>
+        <li class="nav-item active"><a class="nav-link text-white" href="/src/Pages/Places.html">Destinations</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/src/Pages/Products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link text-white" href="/src/Pages/Events.html">Festivals</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <header id="home" class="hero-section">
       <div class="container text-center text-md-left">
@@ -46,41 +47,29 @@
       </div>
     </header>
 
-    <section id="previews" class="section-padding" style="background-color: var(--car-light)">
+    <section id="about" class="section-padding" style="background-color: var(--car-light)">
       <div class="container">
         <div class="section-title">
-          <span>Discover</span>
-          <h2>Experience the Best of CAR</h2>
+          <span>About</span>
+          <h2>The Cordillera Administrative Region</h2>
         </div>
-        <div class="row text-center">
-          <div class="col-md-4 mb-4">
-            <div class="car-card p-4">
-              <i class="fas fa-mountain fa-3x mb-3" style="color: var(--car-green)"></i>
-              <h4>Where to Go</h4>
-              <p class="text-muted">Explore misty peaks, ancient caves, and majestic terraces that touch the clouds.</p>
-              <a href="/src/Pages/Places.html" class="btn btn-car-outline mt-2">Explore Places</a>
-            </div>
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 animate-fade-up">
+            <img src="/Images/Homepage/Baguio.jpg" alt="Scenic Cordillera Mountains" class="img-fluid rounded shadow" />
           </div>
-          <div class="col-md-4 mb-4">
-            <div class="car-card p-4">
-              <i class="fas fa-shopping-bag fa-3x mb-3" style="color: var(--car-terracotta)"></i>
-              <h4>What to Buy</h4>
-              <p class="text-muted">Take home highland coffee, woven inabel, and intricate local wood carvings.</p>
-              <a href="/src/Pages/Products.html" class="btn btn-car-outline mt-2">View Products</a>
-            </div>
-          </div>
-          <div class="col-md-4 mb-4">
-            <div class="car-card p-4">
-              <i class="fas fa-drum fa-3x mb-3" style="color: var(--car-green)"></i>
-              <h4>Festivals</h4>
-              <p class="text-muted">Witness a riot of colors celebrating rich cultural thanksgiving and heritage.</p>
-              <a href="/src/Pages/Events.html" class="btn btn-car-outline mt-2">See Events</a>
-            </div>
+          <div class="col-lg-6 animate-fade-up" style="animation-delay: 0.2s;">
+            <p class="lead text-muted mb-4">
+              Nestled within the highest and largest mountain range in the Philippines, the Cordillera Administrative Region (CAR) is a land of misty peaks, ancient rice terraces, and vibrant indigenous traditions. 
+            </p>
+            <p class="text-muted">
+              Often referred to as the "Roof of the Philippines," this landlocked highland sanctuary offers a cool escape and a deep dive into the ancestral domain of the Igorot people. Whether you are chasing the sea of clouds at Mt. Pulag, exploring the mystical hanging coffins of Sagada, or marveling at the sheer ingenuity of the Banaue Rice Terraces, the Cordilleras promise an unforgettable journey into the heart of Philippine heritage.
+            </p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Destinations Section -->
     <section class="section-padding">
       <div class="container">
         <div class="section-title">
@@ -89,32 +78,35 @@
         </div>
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1543165213-9a3d463d11b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Banaue" style="height: 250px; object-fit: cover;" />
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Places/Banaue.jpg" class="card-img-top" alt="Banaue" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Ifugao</span>
                 <h4 class="card-title mt-2">Banaue Rice Terraces</h4>
                 <p class="card-text text-muted">The "Eighth Wonder of the World," carved into the mountains by ancestors over 2,000 years ago.</p>
+                <a href="/src/Pages/Places.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1552085731-0677a28ebf94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Sagada" style="height: 250px; object-fit: cover;" />
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Places/Sagada.jpg" class="card-img-top" alt="Sagada" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Mountain Province</span>
                 <h4 class="card-title mt-2">Sagada Hanging Coffins</h4>
                 <p class="card-text text-muted">A fascinating centuries-old traditional burial site suspended high along limestone cliffs.</p>
+                <a href="/src/Pages/Places.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1518242007629-613d7890c29f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mt Pulag" style="height: 250px; object-fit: cover;" />
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Places/Mt Pulag.jpg" class="card-img-top" alt="Mt Pulag" style="height: 250px; object-fit: cover;" />
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-map-marker-alt"></i> Benguet</span>
                 <h4 class="card-title mt-2">Mount Pulag</h4>
                 <p class="card-text text-muted">Luzon's highest peak, famous for its majestic "sea of clouds" and unique dwarf bamboo.</p>
+                <a href="/src/Pages/Places.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
@@ -125,6 +117,7 @@
       </div>
     </section>
 
+    <!-- Products Section -->
     <section class="section-padding" style="background-color: var(--car-light)">
       <div class="container">
         <div class="section-title">
@@ -133,42 +126,46 @@
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="car-card">
-              <div class="card-img-top" style="background-color: #4a3b32; height: 200px"></div>
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Products/Arabica.jpg" class="card-img-top" alt="Benguet Arabica" style="height: 200px; object-fit: cover;">
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-coffee"></i> Produce</span>
                 <h5 class="card-title mt-2">Arabica Coffee</h5>
                 <p class="card-text text-muted small">Premium highland beans known for rich aroma.</p>
+                <a href="/src/Pages/Products.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="car-card">
-              <div class="card-img-top" style="background-color: #6c4b7b; height: 200px"></div>
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Products/Good Sheperd.jpg" class="card-img-top" alt="Benguet Arabica" style="height: 200px; object-fit: cover;">
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-utensils"></i> Delicacy</span>
                 <h5 class="card-title mt-2">Good Shepherd Ube</h5>
                 <p class="card-text text-muted small">Iconic purple yam jam from Baguio City.</p>
+                <a href="/src/Pages/Products.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="car-card">
-              <div class="card-img-top" style="background-color: #b45a44; height: 200px"></div>
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Products/Ibanel.jpeg" class="card-img-top" alt="Benguet Arabica" style="height: 200px; object-fit: cover;">
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-tshirt"></i> Handcraft</span>
                 <h5 class="card-title mt-2">Inabel Fabric</h5>
                 <p class="card-text text-muted small">Handwoven textiles with distinct tribal patterns.</p>
+                <a href="/src/Pages/Products.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 mb-4">
-            <div class="car-card">
-              <div class="card-img-top" style="background-color: #8b6b55; height: 200px"></div>
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Products/Bulul Carvings.jpg" class="card-img-top" alt="Benguet Arabica" style="height: 200px; object-fit: cover;">
               <div class="card-body">
                 <span class="location-badge"><i class="fas fa-hammer"></i> Art</span>
                 <h5 class="card-title mt-2">Bulul Carvings</h5>
                 <p class="card-text text-muted small">Hand-carved Ifugao wooden rice god figures.</p>
+                <a href="/src/Pages/Products.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
@@ -179,6 +176,7 @@
       </div>
     </section>
 
+    <!-- Festivals Section -->
     <section class="section-padding">
       <div class="container">
         <div class="section-title">
@@ -187,22 +185,24 @@
         </div>
         <div class="row">
           <div class="col-lg-6 col-md-6 mb-4">
-            <div class="car-card">
-              <img src="https://images.unsplash.com/photo-1508920150917-a0f5fc0b4119?auto=format&fit=crop&w=600&q=80" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Flower Fest" />
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Events/Panagbenga Festival.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Flower Fest" />
               <div class="card-body">
                 <span class="location-badge"><i class="far fa-calendar-alt"></i> February • Baguio</span>
                 <h4 class="card-title mt-2">Panagbenga Festival</h4>
                 <p class="card-text text-muted">Baguio City's famous month-long annual flower festival celebrating the season of blooming and resilience.</p>
+                <a href="/src/Pages/Events.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 mb-4">
-            <div class="car-card">
-              <div class="card-img-top bg-secondary" style="height: 250px; background-color: #b05c36 !important"></div>
+            <div class="car-card position-relative h-100 shadow-sm">
+              <img src="/Images/Events/Lang ay.jpg" class="card-img-top" style="height: 250px; object-fit: cover;" alt="Flower Fest" />
               <div class="card-body">
                 <span class="location-badge"><i class="far fa-calendar-alt"></i> April • Mt. Province</span>
                 <h4 class="card-title mt-2">Lang-ay Festival</h4>
                 <p class="card-text text-muted">Mountain Province's celebration of community sharing, traditional peace pacts, and rich cultural heritage.</p>
+                <a href="/src/Pages/Events.html" class="stretched-link"></a>
               </div>
             </div>
           </div>
