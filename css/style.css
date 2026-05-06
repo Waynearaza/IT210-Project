@@ -178,11 +178,70 @@ h5 {
   border-bottom: 2px solid var(--car-green);
 }
 
-footer {
-  background-color: var(--car-green-dark);
-  color: #ddd;
-  padding: 40px 0;
-  text-align: center;
+/* --- Updated Footer Section --- */
+
+footer.footer-custom {
+  background-color: var(--car-green-dark) !important;
+  color: #ffffff !important;
+  padding: 80px 0 30px;
+  text-align: left; /* Matches the multi-column alignment in the screenshot */
+}
+
+/* Titles for the 4 columns */
+footer.footer-custom h4 {
+  color: #ffffff;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+/* General text and muted Bootstrap text forced to white */
+footer.footer-custom p, 
+footer.footer-custom .text-muted {
+  color: rgba(255, 255, 255, 0.8) !important;
+  line-height: 1.6;
+  font-family: var(--font-body);
+}
+
+/* List styling for Quick Links and Experience columns */
+footer.footer-custom ul li {
+  margin-bottom: 12px;
+}
+
+footer.footer-custom ul li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+footer.footer-custom ul li a:hover {
+  color: var(--car-terracotta) !important;
+  padding-left: 8px; /* Subtle sliding effect on hover */
+}
+
+/* Developer Portfolio Button */
+.btn-outline-white {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 30px;
+  padding: 8px 25px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-outline-white:hover {
+  background-color: #ffffff;
+  color: var(--car-green-dark);
+  text-decoration: none;
+}
+
+/* Horizontal line and Copyright bar */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 25px;
+  margin-top: 50px;
 }
 
 /* Mobile adjustments (Tablets and below) */

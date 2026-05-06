@@ -41,3 +41,6 @@ $(document).ready(function () {
     }
   });
 });
+
+// Add this script at the end to automatically update the year
+document.getElementById("year").textContent = new Date().getFullYear();
