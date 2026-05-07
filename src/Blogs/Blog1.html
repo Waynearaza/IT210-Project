@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog — Why I Stopped Chasing Perfect Code</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <!-- Linking your specific CSS file -->
+  <link rel="stylesheet" href="/css/pstyle.css">
+  <link rel="stylesheet" href="/css/Blog.css">
+
+</head>
+<body>
+
+<!-- NAV (Updated Hrefs to Portfolio.html) -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="Portfolio.html#hero">Wayne<em style="color:var(--terracotta)">.</em></a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="bi bi-list text-light fs-4"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="/src/Portfolio.html#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/Portfolio.html#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/Portfolio.html#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/Portfolio.html#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/Portfolio.html#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/src/main.html">Back</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ARTICLE HEADER -->
+<header class="article-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <p class="hero-eyebrow fade-up">Entry 01 — April 28, 2026</p>
+        <h1 class="hero-title fade-up">Why I Stopped Chasing <em>Perfect</em> Code</h1>
+        <div class="divider mx-auto mt-4 fade-up"></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN CONTENT -->
+<main style="background: var(--cream); padding: 80px 0;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto fade-up blog-content-area">
+        
+        <p class="lead" style="font-size: 1.4rem; font-family: 'Playfair Display', serif; color: var(--sage); font-style: italic; margin-bottom: 3rem; border-left: 2px solid var(--sand); padding-left: 1.5rem;">
+          "After years of obsessing over architecture, I've learned that shipping is a form of craftsmanship too. Here is why 'done' is often better than 'perfect'."
+        </p>
+
+        <p>In the early days of my <strong>Information Technology</strong> studies, I viewed code as sacred geometry. Every function had to be a masterpiece. I would spend weeks building the "perfect" system, only to realize the project requirements had already shifted by the time I was done.</p>
+
+        <h3>The Trap of Over-Engineering</h3>
+        <p>Over-engineering is a silent project killer. It feels like productivity because you're solving complex problems, but if those problems aren't the ones your user is facing, you're just spinning your wheels. I learned that a feature in production—even with imperfect code—is infinitely more valuable than a perfect one sitting on a local branch.</p>
+
+        <blockquote class="blog-blockquote">
+          "The most expensive code in the world is the code that never reaches the end user."
+        </blockquote>
+
+        <h3>Pragmatic Craftsmanship</h3>
+        <p>Switching to a pragmatic mindset didn't mean I stopped caring about quality. Instead, I started caring about the <em>right</em> things: maintainability, reliability, and speed to value.</p>
+
+        <p>Today, I treat code as a living organism. It’s meant to evolve, break, and be repaired. Perfection isn't the goal—consistent improvement and real-world impact are.</p>
+
+      </div>
+    </div>
+
+    <!-- POST NAVIGATION -->
+    <div class="row mt-5">
+      <div class="col-lg-8 mx-auto fade-up">
+        <div class="divider mb-4" style="width: 100%; opacity: 0.1;"></div>
+        <div class="d-flex justify-content-between align-items-center">
+          <!-- Corrected link back to the blog section on the main page -->
+          <a href="/src/Portfolio.html#blog" class="breadcrumb-link">
+            <i class="bi bi-arrow-left me-2"></i> Back to Insights
+          </a>
+          
+          <div class="d-flex gap-3">
+            <a href="#" class="social-btn" style="width: 40px; height: 40px; font-size: 1rem;"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-btn" style="width: 40px; height: 40px; font-size: 1rem;"><i class="bi bi-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Aerionne Wayne Araza</span>. Designed & built with Bootstrap 5.</p>
+</footer>
+
+<!-- SCROLL TO TOP -->
+<button id="scrollTop" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/js/p.js"></script>
+</body>
+</html>

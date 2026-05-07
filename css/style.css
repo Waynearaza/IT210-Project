@@ -248,7 +248,7 @@ footer.footer-custom ul li a:hover {
 @media (max-width: 991.98px) {
   /* Navbar Mobile Fixes */
   .navbar-custom {
-    background-color: transparent; 
+    background-color: var(--car-green-dark); /* <-- Changed from transparent */
     padding: 10px 0;
   }
   
