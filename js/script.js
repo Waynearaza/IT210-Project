@@ -8,6 +8,27 @@ $(document).ready(function () {
     }
   });
 
+  // Scroll-to-top button (added globally via JS)
+  if ($("#scrollToTopBtn").length === 0) {
+    $("body").append(
+      '<button id="scrollToTopBtn" class="scroll-to-top" type="button" aria-label="Scroll to top" title="Back to top">' +
+        '<i class="fas fa-chevron-up" aria-hidden="true"></i>' +
+        "</button>",
+    );
+  }
+
+  $(window).on("scroll", function () {
+    if ($(this).scrollTop() > 300) {
+      $("#scrollToTopBtn").addClass("is-visible");
+    } else {
+      $("#scrollToTopBtn").removeClass("is-visible");
+    }
+  });
+
+  $(document).on("click", "#scrollToTopBtn", function () {
+    $("html, body").animate({ scrollTop: 0 }, 600);
+  });
+
   // 2. Custom Smooth Scrolling for Navigation Links
   $("a.nav-link").on("click", function (event) {
     if (this.hash !== "") {
@@ -43,4 +64,5 @@ $(document).ready(function () {
 });
 
 // Add this script at the end to automatically update the year
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();
